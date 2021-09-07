@@ -1,11 +1,11 @@
 package daalgavar3;
 
-public class Traingle extends Shape {
+public class Triangle extends Shape {
 
 	private Double base;
 	private Double heigth;
 	
-	public Traingle(Double base, Double heigth) {
+	public Triangle(Double base, Double heigth) {
 		super();
 		this.base = base;
 		this.heigth = heigth;
@@ -18,7 +18,7 @@ public class Traingle extends Shape {
 
 	@Override
 	public String toString() {
-		return "Traingle [base=" + base + ", heigth=" + heigth + "]";
+		return "Triangle [color=" + super.color + ", base=" + base + ", heigth=" + heigth + "]";
 	}
 
 	public Double getBase() {

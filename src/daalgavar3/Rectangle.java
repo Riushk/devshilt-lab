@@ -20,7 +20,7 @@ public class Rectangle extends Shape {
 
 	@Override
 	public String toString() {
-		return "Rectangle [length=" + length + ", width=" + width + "]";
+		return "Rectangle [color=" + super.color + ", length=" + length + ", width=" + width + "]";
 	}	
 	
 	public Double getLength() {

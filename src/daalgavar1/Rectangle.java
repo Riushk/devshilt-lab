@@ -2,6 +2,8 @@ package daalgavar1;
 
 public class Rectangle {
 	
+	private Double width;
+	private Double heigth;
 	
 	public Rectangle() {
 		
@@ -12,9 +14,6 @@ public class Rectangle {
 		this.width = width;
 		this.heigth = heigth;
 	}
-	
-	private Double width;
-	private Double heigth;
 	
 	public Double Area() {
 		return width * heigth;
@@ -27,12 +26,15 @@ public class Rectangle {
 	public Double getWidth() {
 		return width;
 	}
+	
 	public void setWidth(Double width) {
 		this.width = width;
 	}
+	
 	public Double getHeigth() {
 		return heigth;
 	}
+	
 	public void setHeigth(Double heigth) {
 		this.heigth = heigth;
 	}
