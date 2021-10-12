@@ -1,10 +1,10 @@
 package daalgavar1;
 
 import java.awt.Button;
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Label;
-import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -12,7 +12,9 @@ import java.awt.event.WindowEvent;
 
 public class Shop extends Frame implements ActionListener {
 	
-	Label lbl = new Label("Онлайн худалдааны програм");
+	private static final long serialVersionUID = 1L;
+
+	Label lbl = new Label("Онлайн худалдааны програм", Label.CENTER);
 	
 	Button fclothes = new Button("Эмэгтэй хувцас");
 	Button mclothes = new Button("Эрэгтэй хувцас");
@@ -21,12 +23,11 @@ public class Shop extends Frame implements ActionListener {
 	Button bag = new Button("Цүнх");
 	Button exit = new Button("Гарах");
 	
-	Panel panel = new Panel();
 	Label shopCartLbl = new Label();
 	
 	public Shop(String title) {
 		super(title);
-		setLayout(new GridLayout(6, 2));
+		setLayout(new GridLayout(8,1));
 		add(lbl);
 		add(fclothes);
 		add(mclothes);
@@ -34,12 +35,12 @@ public class Shop extends Frame implements ActionListener {
 		add(accessories);
 		add(bag);
 		add(exit);
-		panel.add(shopCartLbl);
-		add(panel);
+		add(shopCartLbl);
 		fclothes.addActionListener(this);
 		mclothes.addActionListener(this);
 		sportswear.addActionListener(this);
 		accessories.addActionListener(this);
+		bag.addActionListener(this);
 		exit.addActionListener(this);
 		pack();
 		

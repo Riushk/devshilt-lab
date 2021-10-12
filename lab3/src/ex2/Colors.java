@@ -11,6 +11,11 @@ import java.awt.event.WindowEvent;
 
 public class Colors extends Frame implements ItemListener {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	Choice clrs = new Choice();
 
 	public Colors(String title) {

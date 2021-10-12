@@ -14,6 +14,11 @@ import java.awt.event.WindowEvent;
 
 public class AnotherQuiz extends Frame implements ActionListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	Label lbl = new Label("Дуртай номоо сонгоно уу");
 	
 	Checkbox chkbook1 = new Checkbox("Сорхугтани - Б.Сарантуяа", false);
